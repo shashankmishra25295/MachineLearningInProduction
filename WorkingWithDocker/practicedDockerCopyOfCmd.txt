@@ -1,0 +1,442 @@
+docker is configured to use the default machine with IP 192.168.99.100
+For help getting started, check out the docs at https://docs.docker.com
+
+
+Start interactive shell
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker --version
+Docker version 18.03.0-ce, build 0520e24302
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e8e4743695c5        ubuntu              "/bin/bash"         31 minutes ago      Up 31 minutes                           laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start e8e4743695c5
+e8e4743695c5
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -as
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES                SIZE
+e8e4743695c5        ubuntu              "/bin/bash"         33 minutes ago      Up 33 minutes                           laughing_blackburn   62.4MB (virtual 127MB)
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e8e4743695c5        ubuntu              "/bin/bash"         33 minutes ago      Up 33 minutes                           laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start e8e4743695c5
+e8e4743695c5
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e8e4743695c5        ubuntu              "/bin/bash"         35 minutes ago      Up 35 minutes                           laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...] [flags]
+
+Run a command in a running container
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e8e4743695c5        ubuntu              "/bin/bash"         38 minutes ago      Up 38 minutes                           laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start e8e4743695c5
+e8e4743695c5
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec e8e4743695c5
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...] [flags]
+
+Run a command in a running container
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...] [flags]
+
+Run a command in a running container
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start e8e4743695c5
+e8e4743695c5
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e8e4743695c5        ubuntu              "/bin/bash"         39 minutes ago      Up 39 minutes                           laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start laughing_blackburn
+laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start laughing
+Error response from daemon: No such container: laughing
+Error: failed to start containers: laughing
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start laughing_blackburn
+laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...] [flags]
+
+Run a command in a running container
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e8e4743695c5        ubuntu              "/bin/bash"         45 minutes ago      Up 45 minutes                           laughing_blackburn
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker start e8e4743695c5
+e8e4743695c5
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec -it e8e4743695c5
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...] [flags]
+
+Run a command in a running container
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ docker exec -it e8e4743695c5 bash
+root@e8e4743695c5:/# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@e8e4743695c5:/# cd home
+root@e8e4743695c5:/home# ls
+programs
+root@e8e4743695c5:/home# cd programs
+root@e8e4743695c5:/home/programs# l
+calculateMean.py
+root@e8e4743695c5:/home/programs# ls
+calculateMean.py
+root@e8e4743695c5:/home/programs# python3.6 calculateMean.py
+root@e8e4743695c5:/home/programs#
+root@e8e4743695c5:/home/programs# nano calculateMean.py
+root@e8e4743695c5:/home/programs# nano calculateMean.py
+root@e8e4743695c5:/home/programs# cd D:\gitHubShashank\Machine Learning Programs\programs\ml_In_Prod\workingWithDocker
+bash: cd: too many arguments
+root@e8e4743695c5:/home/programs# cd D:\\gitHubShashank\\Machine Learning Programs\\programs\\ml_In_Prod\\workingWithDocker
+bash: cd: too many arguments
+root@e8e4743695c5:/home/programs# cd D:\\gitHubShashank\\Machine Learning Programs\\programs\\ml_In_Prod\\workingWithDocker
+bash: cd: too many arguments
+root@e8e4743695c5:/home/programs# cd D:\\gitHubShashank\\Machine Learning Programs\\programs\\ml_In_Prod\\workingWithDockerls
+bash: cd: too many arguments
+root@e8e4743695c5:/home/programs# cd D:\\gitHubShashank\\Machine Learning Programs\\programs\\ml_In_Prod\\workingWithDockerls
+bash: cd: too many arguments
+root@e8e4743695c5:/home/programs# pwd
+/home/programs
+root@e8e4743695c5:/home/programs# ls
+calculateMean.py
+root@e8e4743695c5:/home/programs# exit
+exit
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ cd D:\gitHubShashank\Machine Learning Programs\programs\ml_In_Prod\workingWithDocker
+bash: cd: too many arguments
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ cd D:\\gitHubShashank\\Machine Learning Programs\\programs\\ml_In_Prod\\workingWithDocker
+bash: cd: too many arguments
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ cd D:\\gitHubShashank\\Machine Learning Programs\\programs\\ml_In_Prod\\workingWithDocker
+bash: cd: too many arguments
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ cd D:\gitHubShashank\Machine Learning Programs\programs\ml_In_Prod\workingWithDocker
+bash: cd: too many arguments
+
+acer@DESKTOP-105HQHC MINGW64 /c/Program Files/Docker Toolbox
+$ cd D:\\gitHubShashank\\MachineLearningPrograms\\programs\\ml_In_Prod\\workingWithDocker
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ ls
+Dockerfile.txt
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ ls
+Dockerfile.txt
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t firstDockerFileImage .
+invalid argument "firstDockerFileImage" for "-t, --tag" flag: invalid reference format: repository name must be lowercase
+See 'docker build --help'.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -it firstDockerFileImage .
+unknown shorthand flag: 'i' in -it
+See 'docker build --help'.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t firstDockerFileImage .
+invalid argument "firstDockerFileImage" for "-t, --tag" flag: invalid reference format: repository name must be lowercase
+See 'docker build --help'.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t firstimage .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: GetFileAttributesEx D:\gitHubShashank\MachineLearningPrograms\programs\ml_In_Prod\workingWithDocker\Dockerfile: The system cannot find the file specified.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ ls
+Dockerfile.txt
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t firstimage .
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM ubuntu
+ ---> 3556258649b2
+Step 2/4 : RUN apt-get update
+ ---> Running in 41994b714022
+Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:3 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [727 kB]
+Get:4 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [591 kB]
+Get:5 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [5436 B]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [4172 B]
+Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
+Get:7 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:9 http://archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages [13.5 kB]
+Get:10 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [186 kB]
+Get:11 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [11.3 MB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages [1344 kB]
+Get:13 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [7235 B]
+Get:14 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1248 kB]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [10.8 kB]
+Get:16 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [901 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [3930 B]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [2496 B]
+Fetched 16.6 MB in 5min 31s (50.3 kB/s)
+Reading package lists...
+Removing intermediate container 41994b714022
+ ---> e66cf4b6ff5f
+Step 3/4 : RUN apt-get -y install python3.6
+ ---> Running in b0181597b7d6
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  file libexpat1 libmagic-mgc libmagic1 libmpdec2 libpython3.6-minimal
+  libpython3.6-stdlib libreadline7 libsqlite3-0 libssl1.1 mime-support
+  python3.6-minimal readline-common xz-utils
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build run -it --name firstcontainer firstimage
+unknown shorthand flag: 'i' in -it
+See 'docker build --help'.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t --name firstcontainer firstimage
+invalid argument "--name" for "-t, --tag" flag: invalid reference format
+See 'docker build --help'.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t firstimage
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | - [flags]
+
+Build an image from a Dockerfile
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker build -t firstimage .
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM ubuntu
+ ---> 3556258649b2
+Step 2/4 : RUN apt-get update
+ ---> Using cache
+ ---> e66cf4b6ff5f
+Step 3/4 : RUN apt-get -y install python3.6
+ ---> Using cache
+ ---> 6386ba99ebd5
+Step 4/4 : CMD echo "hello in Dockerfile"
+ ---> Using cache
+ ---> d317b8c53c85
+Successfully built d317b8c53c85
+Successfully tagged firstimage:latest
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker run -it --name firstcontainer firstimage
+hello in Dockerfile
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ ls
+Dockerfile
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+firstimage          latest              d317b8c53c85        4 minutes ago       126MB
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker start firstimage
+Error response from daemon: No such container: firstimage
+Error: failed to start containers: firstimage
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker run -it --name firstcontainer firstimage
+C:\Program Files\Docker Toolbox\docker.exe: Error response from daemon: Conflict. The container name "/firstcontainer" is already in use by container "5b6300952ccc6b598be04f9a40345d41f033c3f7d7973204eb89cfe998ae5d1a". You have to remove (or rename) that container to be able to reuse that name.
+See 'C:\Program Files\Docker Toolbox\docker.exe run --help'.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker run -it --name firstcontainer1 firstimage
+hello in Dockerfile
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+firstimage          latest              d317b8c53c85        2 hours ago         126MB
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker container
+
+Usage:  docker container COMMAND
+
+Manage containers
+
+Options:
+
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  inspect     Display detailed information on one or more containers
+  kill        Kill one or more running containers
+  logs        Fetch the logs of a container
+  ls          List containers
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  prune       Remove all stopped containers
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  run         Run a command in a new container
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker container COMMAND --help' for more information on a command.
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker containers
+docker: 'containers' is not a docker command.
+See 'docker --help'
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker --version
+Docker version 18.03.0-ce, build 0520e24302
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker exec
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...] [flags]
+
+Run a command in a running container
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ sudo docker login
+bash: sudo: command not found
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: shashank25295
+Password:
+Login Succeeded
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+firstimage          latest              d317b8c53c85        2 hours ago         126MB
+ubuntu              latest              3556258649b2        4 days ago          64.2MB
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker tag firstimage shashank25295/learningdocker:firstimage
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$ docker push shashank25295/learningdocker:firstimage
+The push refers to repository [docker.io/shashank25295/learningdocker]
+5f92fdf7dd39: Pushed
+bd069e73c6e9: Pushed
+b079b3fa8d1b: Mounted from library/ubuntu
+a31dbd3063d7: Mounted from library/ubuntu
+c56e09e1bd18: Mounted from library/ubuntu
+543791078bdb: Mounted from library/ubuntu
+firstimage: digest: sha256:e2200b5cb097a295ba66678488e3e15a76c7042739d12a8da1df535295924210 size: 1576
+
+acer@DESKTOP-105HQHC MINGW64 /d/gitHubShashank/MachineLearningPrograms/programs/ml_In_Prod/workingWithDocker (master)
+$
+
+
+
